@@ -1,2 +1,1 @@
-# krus7ev.github.io
-ki do ai
+# I DO AI, KIDO
