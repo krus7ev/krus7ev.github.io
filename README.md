@@ -1,1 +1,3 @@
 # I DO AI, KIDO
+
+Howdy! This website will be populated shortly...
