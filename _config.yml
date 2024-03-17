@@ -18,23 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: I do AI, kido!
-description: >- # this means to ignore newlines until "baseurl:"
-  Computer scientist (BSc, UoB) with industrial experience in NLP and Vision.
-  Interested mainly in ML, Graphics and cool tools.
-  Walks the dog too.
+# title: Hi Kiddo, I do AI!
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Computer scientist (BSc, UoB) with industrial experience in NLP and Vision.
+#   Interested mainly in ML, Graphics and cool tools.
+#   Walks the dog too.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kidoai.xyz" # the base hostname & protocol for your site
 
-email: crustev.ct@gmail.com
-github_username:  krus7ev
-# twitter_username: jekyllrb
+author_name: "Christian T. Crustev"
+github_username:  "krus7ev"
+email: "crustev.ct@gmail.com"
+twitter_username: "@CCrustev"
 
 # Build settings
-theme: minima
-# plugins:
+plugins: []
 #   - jekyll-feed
+# theme: minima
+
+collections:
+  papers:
+  side_projects:
+  media:
+  main_pages:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,25 +1,50 @@
 ---
 permalink: /404.html
-layout: default
+layout: barebones
 ---
+<!-- Alaxe verse enumaration-->
+<script>
+const verses = [
+`When loud cacophony's defaming,
+Although you are of tender years,
+And when you find their judgement's framing
+Your loss of honour with their smears;`,
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+`Alone among the frigid rabble,
+I take upon myself your pain
+And for you with my fruitless gabble
+To heedless idol beg again.`,
 
-<div class="container">
-  <h1>404</h1>
+`But condemnation's harsh intrusions
+The world will never cast aside:
+It won't chastise the proud's delusions -
+Instead their grasp contrives to hide.`,
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+`So all its two-faced persecution
+And all the love it shows in vain
+Deserve contempt, not absolution:
+Prepare then, for oblivion's reign;`,
+
+`And don't imbibe from poisoned chalice;
+Abandon brilliant, stuffy sphere;
+Abandon mad diversion's malice:
+One friend alone you have - he's here.`,
+
+`- "Когда твои младые лета" by Alexander Pushkin, 1829 -
+   (translation by Rupert Moreton)
+ 
+ / It's like alexalex' 404 page but with an explainer at the end, welcome! /`
+];
+const storageKey = "404.verseIndex";
+
+let verseIndex = parseInt(localStorage.getItem(storageKey)) || 0;
+if (verseIndex >= verses.length || verseIndex < 0) {
+  verseIndex = 0;
+}
+
+const currentVerse = verses[verseIndex];
+const main = document.getElementsByTagName("main")[0];
+main.innerHTML = currentVerse.replace(/\n/g, "<br>");
+
+localStorage.setItem(storageKey, (verseIndex + 1) % verses.length);
+</script>

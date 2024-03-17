@@ -1,0 +1,214 @@
+- category: "Unit Level 6: Computer Science"
+  classes:
+  - number: COMS30002
+    credits: "10"
+    name: Cryptography A
+    semester: Autumn 2015
+    grade: "47"
+
+  - number: COMS30003
+    credits: "10"
+    name: Computational Bioinformatics
+    semester: Spring 2016
+    grade: "69"
+
+  - number: COMS30115
+    credits: "10"
+    name: Computer Graphics
+    semester: Spring 2016
+    grade: "64"
+
+  - number: COMS30121
+    credits: "10"
+    name: Image Processing and Computer Vision
+    semester: Autumn 2015
+    grade: "60"
+
+  - number: COMS30127
+    credits: "10"
+    name: Computational Neuroscience
+    semester: Spring 2016
+    grade: "81"
+
+  - number: COMS30301
+    credits: "10"
+    name: Introduction to Machine Learning
+    semester: Autumn 2015
+    grade: "67"
+
+  - number: COMS30500
+    credits: "40"
+    name: Individual Project - BSc Thesis
+    semester: Autumn 2015 & Spring 2016
+    grade: "85"
+
+  - number: COMS30901
+    credits: "10"
+    name: Applied Security
+    semester: Spring 2016
+    grade: "54"
+
+  - number: COMS31000
+    credits: "10"
+    name: Character and Set Design
+    semester: Autumn 2015
+    grade: "50"
+
+
+- category: "Unit Level 5: Computer Science"
+  classes:
+  - number: COMS20600
+    credits: "10"
+    name: Concurrency
+    semester: Autumn 2013
+    grade: "56"
+
+  - number: COMS20700
+    credits: "10"
+    name: Databases
+    semester: Autumn 2013
+    grade: "81"
+
+  - number: COMS20805
+    credits: "20"
+    name: Software Product Engineering
+    semester: Autumn 2013 & Spring 2014
+    grade: "62"
+
+  - number: COMS21103
+    credits: "20"
+    name: Data Structures & Algorithms
+    semester: Autumn 2014
+    grade: "40"
+
+  - number: COMS21202
+    credits: "20"
+    name: Signals Patterns & Symbols
+    semester: Spring 2014
+    grade: "48"
+
+  - number: COMS22201
+    credits: "20"
+    name: Language Engineering
+    semester: Summer 2014
+    grade: "40"
+
+
+- category: "Unit Level 4: Computer Science & Engineering Mathematics"
+  classes:
+  - number: COMS11300
+    credits: "10"
+    name: Procedural Programming
+    semester: Autumn 2012
+    grade: "88"
+
+  - number: COMS11600
+    credits: "10"
+    name: Principles of Programming
+    semester: Autumn 2012
+    grade: "74"
+
+  - number: COMS11700
+    credits: "10"
+    name: Theory of Computation
+    semester: Spring 2013
+    grade: "77"
+
+  - number: COMS12303
+    credits: "10"
+    name: Origins of Computer Science
+    semester: Autumn 2012
+    grade: "70"
+
+  - number: COMS12400
+    credits: "10"
+    name: Object Oriented and Functional Programming
+    semester: Spring 2013
+    grade: "65"
+
+  - number: COMS12500
+    credits: "10"
+    name: Computer Networks
+    semester: Spring 2013
+    grade: "68"
+
+  - number: COMS12600
+    credits: "10"
+    name: Introduction to Computer Architecture
+    semester: Spring 2013
+    grade: "61"
+
+  - number: COMS12700
+    credits: "10"
+    name: Introduction to Microelectronics
+    semester: Autumn 2012
+    grade: "62"
+
+  - number: COMS12900
+    credits: "10"
+    name: High-Tech Enterprise
+    semester: Spring 2013
+    grade: "64"
+
+  - number: EMAT10704
+    credits: "20"
+    name: Discrete Mathematics
+    semester: Autumn 2012 & Spring 2013
+    grade: "71"
+
+  - number: EMAT10704
+    credits: "10"
+    name: Continuous Mathematics for Computer Scientists
+    semester: Autumn 2012
+    grade: "74"
+
+
+- category: "Unit Level 4: French for General Purposes Level 1 Grade 3 (Post A'Level)"
+  classes:
+  - number: LANG13022
+    credits: "2.5"
+    name: MS Reading
+    semester: Autumn 2013
+    grade: "84"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: MS Writing
+    semester: Autumn 2013
+    grade: "66"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: MS Listening
+    semester: Autumn 2013
+    grade: "60"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: MS Speaking
+    semester: Autumn 2013
+    grade: "65"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: FE Reading
+    semester: Spring 2014
+    grade: "83"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: French for General Purposes Level 1 Exam
+    semester: Spring 2014
+    grade: "60"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: FE Listening
+    semester: Spring 2014
+    grade: "60"
+
+  - number: LANG13022
+    credits: "2.5"
+    name: FE Speaking
+    semester: Spring 2014
+    grade: "64"
