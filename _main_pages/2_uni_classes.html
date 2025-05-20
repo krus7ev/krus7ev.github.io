@@ -5,7 +5,7 @@ permalink: /uni_classes/
 now: Spring 2024
 ---
 <h1> BSc in Computer Science @ University of Bristol </h1>
-<h3> With Second Class Honours (First Division)</h2>
+<h3> With 2.1 - <em>Second Class Honours (First Division)</em></h2>
 
 {% for cat in site.data.classes %}
 <section>
@@ -31,15 +31,15 @@ now: Spring 2024
               </sub>
             {% endif %}
           </td>
-          <td>{{ cl.name }}</td>
           <td class="course">
-            {% if cl.semester == "ASE" %}
-              <span data-tooltip="Advanced Standing Exam">ASE</span>
-            {% elsif cl.semester == page.now %}
-              <em>{{ cl.semester }}</em>
+            {% if cl.number == "COMS30500" %}
+              Individual project <a href="/thesis/">BSc thesis</a>
             {% else %}
-              {{ cl.semester }}
+              {{ cl.name }}
             {% endif %}
+          </td>
+          <td>            
+            {{ cl.semester }}
           </td>
           <td>{{ cl.credits }}</td>
           <td>{{ cl.grade }}</td>

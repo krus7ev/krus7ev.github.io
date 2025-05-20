@@ -1,0 +1,149 @@
+---
+layout: page
+title: Thesis
+permalink: /thesis/
+---
+
+<h1>BSc Thesis: Calculating Mutual Information in Metric Spaces</h1>
+
+
+<a href="/thesis/Thesis.pdf")>Paper</a> | <a href="https://github.com/krus7ev/Neuro_MI">Code</a> | <a href="Poster.pdf">Poster</a><br><br>
+
+<h3><em>Old Laurels</em></h3>
+<p>
+    My final-year individual project at Bristol with <a href=https://conorhoughton.github.io/>Dr. Conor Houghton</a> is my highest academic
+    achievement so far. It thaught me how to conduct scientific research and computational experiments.
+</p>
+
+<img src="/thesis/poster.png" alt="BSc project "MI in Metric Spaces" presentation poster">
+
+<h2>Abstract</h2>
+
+<p><i>
+    Mutual information tells us how much the uncertainty associated with one variable is reduced by the knowledge
+    of another one [<a href="#refs">18</a>, <a href="#refs">2</a>]. It is a useful tool for quantifying relationships and
+    has many applications to statistical modelling - for example in various types of clustering where one aims to maximise
+    the dependencies within a partition. Typically, like most information-theoretic quantities, mutual information is
+    estimated for variables that are either discrete or take values in a coordinate space. However, many important data
+    types have distance metrics or measures of similarity, but no coordinates on them. The spaces induced by these metrics
+    are not manifolds and their integration measure is not so obvious. Datasets of this type are collected from electrophys-
+    iological experiments in neuroscience and gene expression data in genetics and biochemistry, but also in other fields
+    like image analysis and data retrieval.
+</i></p>
+<p><i>
+    The purpose of this project was to implement and test an estimator for calculating mutual information between
+    data, where one or both variables come from a metric space without coordinates. The model estimator itself
+    was been described in [<a href="#refs">27</a>], but had not been implemented and tested until now. It aims to provide a simple
+    approach to the Kozachenko-Leonenko estimator for mutual information [<a href="#refs">5</a>], that extends it in order to apply
+    to the broader class of metric-space data.
+</i></p>
+<p><i>
+    The model is particularly relevant to neuroscience because it addresses the problem of calculating information
+    theory quantities from the similarity measures on the space of spike trains. This is the application that motivates
+    it and serves as the main framework for producing the data, used to test and adjust it.
+</i></p>
+<p><i>
+    Application software was developed in <code>Python2</code>. It was the preferred choice over MATLAB for example, because
+    it is a modern high-level language with nice syntax and structure that supports various coding styles. It also
+    has libraries and packages which are analogous to the <code>MATLAB</code> functionality relevant to the task: <code>NumPy</code>,
+    <code>SciPy</code>, <code>PyLab</code>, <code>matplotlib</code> etc. In addition to this, it offers interfaces to other tools for 
+    computational neuroscience and mathematics, which could be useful for the future development of the project.
+    The implementation applies the suggested model to fictive spike-train data generated using a stochastic model
+    and data related to it that is produced by a deterministic neural simulation. The proposed thesis aims to
+    investigate the model's correctness and evaluate its performance on various tasks. The analysed results paved the way
+    to its future application to real experimental neuroscientific data.
+</i></p>
+
+<h2>Context</h2>
+<p>
+   Undertaking the problem involved multiple levels of mathematical abstraction and modelling that I had limited experience
+   at the time, as it's at the intersection of Mathematics and Neuroscience.
+</p><p>
+    Its objective was to demonstrate experimentally with artificially generated stimulus data. Unsurprisingly, the biggest
+    challenge was presuading the examiners that the experimental result led to valid conclusions without being compared to a
+    ground truth or the go-to estimtion methods (due to their computational cost and my limitte time and experience).
+</p><p>
+    In 2015 I switched to a 3-year <span data-tooltip="Bachelor of Science">BSc</span> from a 4-year <span data-tooltip="Master 
+    of Engineering">MEng</span> course after retaking the <span data-tooltip="Data Structures and Algorithms">DSA</span> module 
+    between 2<sup>nd</sup> and 3<sup>rd</sup> years at UNI. I wanted to graduate together with my peers and to do a scientific 
+    thesis instead of taking part in a 3<sup>rd</sup>-year game-dev group project.
+</p><p>
+    Apart from studying algorithms, during my gap year I split my time between visiting my friends' 3<sup>rd</sup>-year and 
+    masters' classes, working as part of Bristol Sicence Museum's catering staff, and engaging in long discussions on math 
+    topics with my friend <a href=https://www.researchgate.net/profile/Delyan-Savchev>Dr. Delyan Savchev</a> who was doing a <span 
+    data-tooltip="Doctor of Philosophy">PhD</span> in Probability & Statistics at the time. Thanks to his 
+    guidance I was able to convince Conor, who was my personal tutor to direct me towards a hard problem within his research 
+    domain and supervise my final-year project.
+</p>
+
+<h2>Conclusion</h2>
+<p><i>
+    The aim of this project was to implement and test a model for estimating mutual information in metric spaces
+    without coordinates in the context of computational neuroscience. The process of achieving this involved extensive
+    research on the mathematical and information-theoretic grounds for its emergence, the metric-space framework
+    for computing spike-train distances it relies on, and the computational methods for simulating neural signalling
+    behaviour.
+</i></p>
+<p><i>
+    A neural simulation environment was developed in software to serve as the basis for constructing experiments
+    designed to test the estimator. Two types of cutting-edge spike-train metrics have been implemented. It was
+    demonstrated that probability densities can be successfully estimated using nearest-neighbour statistics in the met-
+    ric spaces induced by these similarity measures. The implemented information estimator is simple and elegant and
+    provides a novel direct way of estimating information-theoretic quantities depending on the probability distributions
+    of more than one variables taking values in metric spaces.
+</i></p>
+<p><i>
+    The neuroscientific problem of calculating mutual information has no analytical solution to test the estimates
+    against. The alternative estimation technique is effectively cumbersome and operates on a different principle risk-
+    ing to fit the space of spike-trains into the Procrustean bed of direct time discretisation. Therefore a strategy was
+    devised for the verification of mutual information estimates based on criteria reflecting their implicit relationship
+    to simulation parameters. Additionally, the nearest-neighbour resolution was investigated and the convergence of
+    the estimates was tested on increasing amounts of input data under constant experimental conditions. Traditional
+    correlation analysis has been used to quantify linear relationships along with the least-squares linear regression
+    model. Both the Pearson correlation coefficient and the mutual information estimates were demonstrated to exhibit
+    convergence behaviour.
+</i></p>
+<p><i>
+    The implications of the presented results to information-theoretic analysis in spaces with non-manifold geometry are
+    yet to unfold. Here they served as a practical proof for the concept of using the marginal probability distribution
+    of one variable as an integration measure in the metric space of another one to some approximation. We have
+    seen this idea develop progressively through the work of Kozachenko and Leonenko [<a href="#refs">5</a>], Kraskov, Stoegbauer and
+    Grassberger [<a href="#refs">17</a>], and Houghton and Tobin [<a href="#refs">27</a>, <a href="#refs">23</a>].
+</i></p>
+<p><i>
+    The software and results produced during this year-long project will be used for its further development during the
+    summer period. A version of the estimator for the case when one of the variables is coming from a discrete corpus
+    has already been implemented and applied to real experimental data recording neural signals of a laboratory mouse
+    running in a maze. Other, initially intended extensions have not been developed entirely to this point and are yet
+    to be completed. The problem and its solution open up an array of possibilities for research and applications. And
+    while this concludes the current work it will be interesting to continue exploring the topic.
+</i></p>
+
+<h2>Aftermath</h2>
+<p>
+    I did not progress substantially with subsequent research during the follow-up summer internship at the 
+    computational neuroscience research lab. The goal was to benchmark the new formula together with the traditional
+    method by Bialek [<a href="#refs">27</a>]. The main stopper was my lack of experience in 
+    <span data-tooltip="High-performance computing">HPC</span>, coupled with the time-scarcity to gain such.
+    I did however manage to imporve the code and convergence analysis a bit.
+</p><p>
+    Although I haven't contributed to scientific work since, this project taught me a lot of mathematics, but most importantly,
+    how to read papers and do research on my own which was pretty useful later in my career as an ML/AI engineer and data scientist.
+</p>
+
+<h2 id="refs">References</h2>
+
+[2] Shannon CE. (1948) A mathematical theory of communication. <i>Bell Syst. Tech. J., 27: 379-423,623-656.</i>
+<br>
+[5] Kozachenko LF, Leonenko NN. (1987) Sample estimate of the entropy of a random vector. <i>Probl. Pereda. Inf., 23: 916.</i>
+<br>
+[11] Strong SP, Koberle R, de Ruyter van Steveninck RR, Bialek W. (1998) Entropy and information in neural spike trains
+<i>Phys. Rev. Lett. 80, 197-200</i>
+<br>
+[18] Cover TM, Thomas JA. (2006) "Elements of information theory" -2nd ed. <i>A Wiley-Interscience publication., p.13-57
+ISBN-13 978-0-471-24195-9.</i>
+<br>
+[23] Tobin RJ, Houghton CJ. (2013) A kernel-based calculation of spike train information. <i>Entropy 15, 45404552.</i>
+<br>
+[27] Houghton CJ. (2015) Calculating mutual information for spike trains and other data with distances but no coordinates.
+<i>R. Soc. open sci., 2: 140391.</i>
