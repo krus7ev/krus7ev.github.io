@@ -32,9 +32,9 @@ permalink: /thesis/
     the dependencies within a partition. Typically, like most information-theoretic quantities, mutual information is
     estimated for variables that are either discrete or take values in a coordinate space. However, many important data
     types have distance metrics or measures of similarity, but no coordinates on them. The spaces induced by these metrics
-    are not manifolds and their integration measure is not so obvious. Datasets of this type are collected from electrophys-
-    iological experiments in neuroscience and gene expression data in genetics and biochemistry, but also in other fields
-    like image analysis and data retrieval.
+    are not manifolds and their integration measure is not so obvious. Datasets of this type are collected from
+    electrophysiological experiments in neuroscience and gene expression data in genetics and biochemistry, but also in
+    other fields like image analysis and data retrieval.
 </i></p>
 <p><i>
     The purpose of this project was to implement and test an estimator for calculating mutual information between
@@ -62,12 +62,10 @@ permalink: /thesis/
 
 <h2>Context</h2>
 <p>
-    Undertaking the problem involved multiple levels of mathematical abstraction and modelling that I had limited experience
-    at the time, as it's at the intersection of Mathematics and Computational Neuroscience.
+    Undertaking the problem involved multiple levels of mathematical abstraction and modelling at the intersection of Computer Science, Mathematics and Computational Neuroscience. Its objective was to demonstrate empirically that the estimator works by simulating a simplified model of biological neurons' spiking behaviour, upon input signal reception from artificially generated
+    stimulus data.
 </p><p>
-    Its objective was to demonstrate experimentally with artificially generated stimulus data. Unsurprisingly, the biggest
-    challenge was presuading the examiners that the experimental result led to valid conclusions without being compared to a
-    ground truth or the go-to estimtion methods (due to their computational cost and my limitte time and experience).
+    Unsurprisingly, the biggest challenge was convincing the examiners that the experimental result led to valid conclusions without being compared to a ground truth or the go-to estimtion method (due to its computational cost and the time limitations for my thesis).
 </p><p>
     In 2015 I switched to a 3-year <span data-tooltip="Bachelor of Science">BSc</span> from a 4-year <span data-tooltip="Master 
     of Engineering">MEng</span> course after retaking the <span data-tooltip="Data Structures and Algorithms">DSA</span> module 
@@ -77,9 +75,9 @@ permalink: /thesis/
     Apart from studying algorithms, during my gap year I split my time between visiting my friends' 3<sup>rd</sup>-year and 
     masters' classes, working as part of Bristol Sicence Museum's catering staff, and engaging in long discussions on math 
     topics with my friend <a href=https://www.researchgate.net/profile/Delyan-Savchev>Dr. Delyan Savchev</a> who was doing a <span 
-    data-tooltip="Doctor of Philosophy">PhD</span> in Probability & Statistics at the time. Thanks to his 
-    guidance I was able to convince Conor, who was my personal tutor to direct me towards a hard problem within his research 
-    domain and supervise my final-year project.
+    data-tooltip="Doctor of Philosophy">PhD</span> in Probability & Statistics at the time. Thanks to his guidance I was able
+    to persuade Conor, who was my personal tutor to direct me towards a hard problem within his research domain and supervise my
+    final-year project.
 </p>
 
 <h2>Conclusion</h2>
@@ -93,15 +91,15 @@ permalink: /thesis/
 <p><i>
     A neural simulation environment was developed in software to serve as the basis for constructing experiments
     designed to test the estimator. Two types of cutting-edge spike-train metrics have been implemented. It was
-    demonstrated that probability densities can be successfully estimated using nearest-neighbour statistics in the met-
-    ric spaces induced by these similarity measures. The implemented information estimator is simple and elegant and
+    demonstrated that probability densities can be successfully estimated using nearest-neighbour statistics in the
+    metric spaces induced by these similarity measures. The implemented information estimator is simple and elegant and
     provides a novel direct way of estimating information-theoretic quantities depending on the probability distributions
     of more than one variables taking values in metric spaces.
 </i></p>
 <p><i>
     The neuroscientific problem of calculating mutual information has no analytical solution to test the estimates
-    against. The alternative estimation technique is effectively cumbersome and operates on a different principle risk-
-    ing to fit the space of spike-trains into the Procrustean bed of direct time discretisation. Therefore a strategy was
+    against. The alternative estimation technique is effectively cumbersome and operates on a different principle risking
+    to fit the space of spike-trains into the Procrustean bed of direct time discretisation. Therefore a strategy was
     devised for the verification of mutual information estimates based on criteria reflecting their implicit relationship
     to simulation parameters. Additionally, the nearest-neighbour resolution was investigated and the convergence of
     the estimates was tested on increasing amounts of input data under constant experimental conditions. Traditional
